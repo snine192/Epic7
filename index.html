@@ -29,34 +29,13 @@
             background-position: center;
             background-attachment: fixed;
             background-size: cover;
-            /* background-blend-mode: darken; */
-            /* 
-                screen      濾色(去黑留白)
-                multiply    色彩增值(去白留黑)
-                overlay     覆蓋
-                darken      變暗
-                lighten     變亮
-                color       顏色
-                luminosity  明度
-                hue         色相
-                soft-light  柔光
-                hard-light  實光
-                color-burn  加深顏色
-                color-dodge 加亮顏色
-                exclusion   排除
-                difference  差異化
-                Saturation  飽合度
-            */
         }
-            /* .carousel .carousel-item {
-            height: 800px;
-            } 
-            .carousel .carousel-item img {
-            min-height: 300px;
-            max-height: 800px;
-            object-fit: cover;
-            }
-            .carousel-inner > .item > img {position: absolute;top: 0;left: 0;min-width: 100%;height: 500px;} */
+        .img {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          background-size: cover;
+        }
         </style>
 </head>
 <body>
@@ -154,8 +133,8 @@
               </div>
               <div class="col-10 sm-my-5 g-sm-3 g-0">
                 <a class="g-0 fw-bold text-light fs-1 text-decoration-none" href="">第七史詩</a>
-                <div>
-                  <span class="fw-bold text-Warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-Warning" viewBox="0 0 16 16">
+                <div class="grid">
+                  <span class="fw-bold text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-Warning" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                   </svg></span>
                   <span class="fw-bold text-light">OFFICIAL</span>
@@ -163,14 +142,13 @@
                   <span class="fw-bold text-light">回合制RPG</span>
                   <span class="fw-bold text-light">世曼凱</span>
                 </div>
-                <p class="fw-bold text-light"></p>
               </div>
             </div>
           </div>
           <div class="container">
             <div class="g-0 g-lg-3 row">
               <div class="col-3 bg-dark text-light">123</div>
-          <div id="carouselCaptions" class="carousel slide col-9 px-0" data-bs-ride="false">
+          <div id="carouselCaptions" class="carousel slide col-9 px-0" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -179,7 +157,7 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <a href="#"><img src="images/001.png" class="d-block w-100" alt="..." href="Epic7.html"></a>
+              <a href="#"><img src="images/001.png" class="d-block w-100" alt="..." href="index.html"></a>
             </div>
             <div class="carousel-item">
               <a href="#"><img src="images/002.png" class="d-block w-100" alt="..." href="#"></a>
@@ -214,10 +192,54 @@
             <li class="">
               <a class="nav-link active fw-bold" href="#">聯絡我們</a>
             </li>
-          </ul>
-        </div>
-        <div class="col-9 g-0 bg-light">
-          <ul class="">
+            <li class="">
+              <a class="nav-link active fw-bold" aria-current="page" href="#">故事介紹</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">角色介紹</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">關於我們</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">聯絡我們</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" aria-current="page" href="#">故事介紹</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">角色介紹</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">關於我們</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">聯絡我們</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" aria-current="page" href="#">故事介紹</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">角色介紹</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">關於我們</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">聯絡我們</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" aria-current="page" href="#">故事介紹</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">角色介紹</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">關於我們</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">聯絡我們</a>
+            </li>
             <li class="">
               <a class="nav-link active fw-bold" aria-current="page" href="#">故事介紹</a>
             </li>
@@ -232,6 +254,78 @@
             </li>
           </ul>
         </div>
+        <div class="col-sm g-0 p-4 bg-light">
+          <h2>公告</h2>
+        </div>
+        <div class="col-sm g-0 p-4 bg-light">
+          <h2>討論區</h2>
+          <div class="g-0 bg-light">
+            <div class="d-flex justify-content-star"><a class="g-0 fs-3 text-dark fw-bold text-decoration-none" href="">活動</a></div>
+            <div class="d-flex justify-content-end"><a class="g-0 text-dark fw-bold text-decoration-none" href="">more</a></div>
+            <section id="" >
+              <div class="container">
+                  <div class="row g-0">
+                      <div class="col-xl-6 col-sm-6">
+                          <div class="border border-drak border-4 shadow">
+                              <div>
+                                  <img src="images/p001.png" class="w-100 img" alt="">
+                              </div>
+                              <div class="px-2 py-2">
+                                <div class="d-flex"><a class="g-0 text-dark fw-bold text-decoration-none" href="">[得獎名單]「超級新手攻略&訣竅活動」得獎者名單</a></div>
+                                  <a href="#" class="btn btn-primary">Link</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="border border-drak border-4 shadow">
+                              <div>
+                                  <img src="images/p001.png" class="w-100" alt="">
+                              </div>
+                              <div class="px-3 py-4">
+                                  <h3>title</h3>
+                                  <p>
+                                    123
+                                  </p>
+                                  <a href="#" class="btn btn-primary">Link</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="border border-drak border-4 shadow">
+                              <div>
+                                  <img src="images/p001.png" class="w-100" alt="">
+                              </div>
+                              <div class="px-3 py-4">
+                                  <h3>title</h3>
+                                  <p>
+                                    123
+                                  </p>
+                                  <a href="#" class="btn btn-danger">Link</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="border border-drak border-4 shadow">
+                              <div>
+                                  <img src="images/p001.png" class="w-100" alt="">
+                              </div>
+                              <div class="px-3 py-4">
+                                  <h3>title</h3>
+                                  <p>
+                                    123
+                                  </p>
+                                  <a href="#" class="btn btn-danger">Link</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+          </div>
+        <!-- </div>
+        <div class="col-1 g-0 bg-light">
+          
+        </div> -->
       </div>
     </div>
     <section class="bg-dark py-5" id="Features">
@@ -247,24 +341,15 @@
       </div>
   </section>
     <script>
+      var myCarousel = document.querySelector('#myCarousel')
+      var carousel = new bootstrap.Carousel(myCarousel)
       AOS.init();
       lightbox.option({
-        albumLabel: '%1/%2',
-        fadeDuration: 500,
-        imageFadeDuration: 500,
-        resizeDuration: 500,
-})
-$(function(){
-        $('.slider').slick({
-            autoplay: true,
-            autoplaySpeed: 1000,
-            speed: 200,
-            dots: true,
-            arrows: true,
-            infinite: true
-        });
-        
-    })
-</script>
-</body>
+      albumLabel: '%1/%2',
+      fadeDuration: 500,
+      imageFadeDuration: 500,
+      resizeDuration: 500,
+      })
+    </script>
+  </body>
 </html>
