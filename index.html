@@ -20,6 +20,34 @@
             margin-left: 8px;
             margin-right: 8px;
             }
+        body {
+            background: #ffffff;
+            background-image: 
+            repeating-linear-gradient(#000 0px ,#000 1px, transparent 1px, transparent 2px),
+            url('images/bg001.jfif');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            /* background-blend-mode: darken; */
+            /* 
+                screen      濾色(去黑留白)
+                multiply    色彩增值(去白留黑)
+                overlay     覆蓋
+                darken      變暗
+                lighten     變亮
+                color       顏色
+                luminosity  明度
+                hue         色相
+                soft-light  柔光
+                hard-light  實光
+                color-burn  加深顏色
+                color-dodge 加亮顏色
+                exclusion   排除
+                difference  差異化
+                Saturation  飽合度
+            */
+        }
             /* .carousel .carousel-item {
             height: 800px;
             } 
@@ -32,128 +60,195 @@
         </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-          <a class="navbar-brand" href="index.html">
-              <img src="https://picsum.photos/id/142/30/24" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">測試攻略網</a>
+          <a class="navbar-brand px-5 fw-bold" href="index.html">
+              <img src="images/top001.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top ">第七史詩</a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">故事介紹</a>
+                <a class="nav-link active fw-bold" aria-current="page" href="#">故事介紹</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">角色介紹</a>
+                <a class="nav-link active fw-bold" href="#">角色介紹</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">關於我們</a>
+                <a class="nav-link active fw-bold" href="#">關於我們</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">聯絡我們</a>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  登入
-                </button>
-                
+                <a class="nav-link active fw-bold" href="#">聯絡我們</a>
               </li>
             </ul>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-light fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              登入
+            </button>
           </div>
         </div>
       </nav>
       <!-- Modal -->
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">登入</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <section style="padding-block: 0px;">
-                <div class="container">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">登入</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <section style="padding-block: 0px;">
+                  <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-12">
-                            <form action="">
-                                <div class="mb-3 row">
-                                    <label for="" class="col-form-label col-4">帳號</label>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control" placeholder="請輸入帳號或E-mail">
+                      <div class="col-12">
+                        <form action="">
+                          <div class="mb-3 row">
+                            <label for="" class="col-form-label col-4">帳號</label>
+                            <div class="col-12">
+                              <input type="text" class="form-control" placeholder="請輸入帳號或E-mail">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label for="" class="col-form-label col-4">密碼</label>
-                                    <div class="col-12">
-                                        <input type="password" spellcheck="false" class="form-control" name="password" placeholder="密碼" autocomplete="current-password" required="" maxlength="22">
+                                    <div class="mb-3 row">
+                                        <label for="" class="col-form-label col-4">密碼</label>
+                                        <div class="col-12">
+                                          <input type="password" spellcheck="false" class="form-control" name="password" placeholder="密碼" autocomplete="current-password" required="" maxlength="22">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mb-3">
-                                  <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      記住帳號密碼
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                      自動登入
-                                    </label>
-                                </div>
-                                <a class="m-0" href="">忘記密碼</a>
-                                <div class="mb-3">
-                                  <h4><span class="badge bg-secondary mt-3">沒有帳號?</span></h4>
-                                  <a href="Epic7.register.html">註冊帳號</a>
-                                </div>
-                            </form>
+                                    <div class="mb-3">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          記住帳號密碼
+                                        </label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          自動登入
+                                        </label>
+                                    </div>
+                                    <a class="m-0" href="">忘記密碼</a>
+                                    <div class="mb-3">
+                                      <h4><span class="badge bg-secondary mt-3">沒有帳號?</span></h4>
+                                      <a href="Epic7.register.html">註冊帳號</a>
+                                    </div>
+                                  </form>
+                            </div>
+                          </div>
                         </div>
-                    </div>
+                  </section>
                 </div>
-            </section>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">登入</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">登入</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="container">
+            <div class="row">
+              <div class="g-sm-3 my-3 col-2">
+                <a href="#"><img src="images/top002.png" class="d-block w-100" alt="..." href="Epic7.html"></a>
+              </div>
+              <div class="col-10 sm-my-5 g-sm-3 g-0">
+                <a class="g-0 fw-bold text-light fs-1 text-decoration-none" href="">第七史詩</a>
+                <div>
+                  <span class="fw-bold text-Warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-Warning" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg></span>
+                  <span class="fw-bold text-light">OFFICIAL</span>
+                  <span class="fw-bold text-light">MOBILE</span>
+                  <span class="fw-bold text-light">回合制RPG</span>
+                  <span class="fw-bold text-light">世曼凱</span>
+                </div>
+                <p class="fw-bold text-light"></p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="g-0 g-lg-3 row">
+              <div class="col-3 bg-dark text-light">123</div>
+          <div id="carouselCaptions" class="carousel slide col-9 px-0" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="#"><img src="images/001.png" class="d-block w-100" alt="..." href="Epic7.html"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="#"><img src="images/002.png" class="d-block w-100" alt="..." href="#"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="#"><img src="images/003.png" class="d-block w-100" alt="..." href="#"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="#"><img src="images/004.png" class="d-block w-100" alt="..." href="#"></a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="col-3 g-0 bg-dark text-light">
+          <ul class="">
+            <li class="">
+              <a class="nav-link active fw-bold" aria-current="page" href="#">故事介紹</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">角色介紹</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">關於我們</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-9 g-0 bg-light">
+          <ul class="">
+            <li class="">
+              <a class="nav-link active fw-bold" aria-current="page" href="#">故事介紹</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">角色介紹</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">關於我們</a>
+            </li>
+            <li class="">
+              <a class="nav-link active fw-bold" href="#">聯絡我們</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div id="carouselCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="#"><img src="images/001.png" class="d-block w-100" alt="..." href="Epic7.html"></a>
+    </div>
+    <section class="bg-dark py-5" id="Features">
+      <div class="container">
+          <div class="row g-4">
+              <div class="p-1 col-lg-4">
+                <iframe width="285" height="185" src="https://www.youtube.com/embed/-5RYjInPDoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+              </div>
+              <div class="p-1 col-lg-4">
+                <iframe width="285" height="185" src="https://www.youtube.com/embed/ATdIL5xIAlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
           </div>
-          <div class="carousel-item">
-            <a href="#"><img src="images/002.png" class="d-block w-100" alt="..." href="#"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="#"><img src="images/003.png" class="d-block w-100" alt="..." href="#"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="#"><img src="images/004.png" class="d-block w-100" alt="..." href="#"></a>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-
-<script>
-    AOS.init();
-    lightbox.option({
+  </section>
+    <script>
+      AOS.init();
+      lightbox.option({
         albumLabel: '%1/%2',
         fadeDuration: 500,
         imageFadeDuration: 500,
