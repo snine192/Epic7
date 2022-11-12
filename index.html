@@ -30,12 +30,6 @@
             background-attachment: fixed;
             background-size: cover;
         }
-        .img {
-          background-repeat: no-repeat;
-          background-position: center;
-          background-attachment: fixed;
-          background-size: cover;
-        }
         </style>
 </head>
 <body>
@@ -147,8 +141,10 @@
           </div>
           <div class="container">
             <div class="g-0 g-lg-3 row">
-              <div class="col-3 bg-dark text-light">123</div>
-          <div id="carouselCaptions" class="carousel slide col-9 px-0" data-bs-ride="carousel">
+              <div class="d-none d-md-block col-3 bg-dark text-light">
+                123
+              </div>
+          <div id="carouselCaptions" class="carousel slide col-md-9 px-0" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -178,7 +174,7 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div class="col-3 g-0 bg-dark text-light">
+        <div class="d-none d-md-block col-3 g-0 bg-dark text-light">
           <ul class="">
             <li class="">
               <a class="nav-link active fw-bold" aria-current="page" href="#">故事介紹</a>
@@ -255,20 +251,27 @@
           </ul>
         </div>
         <div class="col-sm g-0 p-4 bg-light">
-          <h2>公告</h2>
+          <div class="d-flex justify-content-star"><a class="g-0 fs-3 text-dark fw-bold text-decoration-none" href="">公告</a></div>
+          <div class="d-flex justify-content-end"><a class="g-0 text-dark fw-bold text-decoration-none" href="">more</a></div>
+          <div>
+            123
+          </div>
         </div>
         <div class="col-sm g-0 p-4 bg-light">
-          <h2>討論區</h2>
+          <div class="d-flex justify-content-star"><a class="g-0 fs-3 text-dark fw-bold text-decoration-none" href="">討論區</a></div>
+          <div class="d-flex justify-content-end"><a class="g-0 text-dark fw-bold text-decoration-none" href="">more</a></div>
           <div class="g-0 bg-light">
             <div class="d-flex justify-content-star"><a class="g-0 fs-3 text-dark fw-bold text-decoration-none" href="">活動</a></div>
             <div class="d-flex justify-content-end"><a class="g-0 text-dark fw-bold text-decoration-none" href="">more</a></div>
             <section id="" >
               <div class="container">
                   <div class="row g-0">
-                      <div class="col-xl-6 col-sm-6">
+                      <div class="col-xl-6 col-lg-6">
                           <div class="border border-drak border-4 shadow">
                               <div>
-                                  <img src="images/p001.png" class="w-100 img" alt="">
+                                <a href="#" class="" >
+                                  <img src="images/p001.png" width="200" height="185" style="object-fit:cover;"  class="w-100" alt="">
+                                </a>
                               </div>
                               <div class="px-2 py-2">
                                 <div class="d-flex"><a class="g-0 text-dark fw-bold text-decoration-none" href="">[得獎名單]「超級新手攻略&訣竅活動」得獎者名單</a></div>
@@ -276,10 +279,12 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-lg-6">
                           <div class="border border-drak border-4 shadow">
                               <div>
-                                  <img src="images/p001.png" class="w-100" alt="">
+                                <a href="#" class="" >
+                                  <img src="images/p001.png" width="200" height="185" style="object-fit:cover;"  class="w-100" alt="">
+                                </a>
                               </div>
                               <div class="px-3 py-4">
                                   <h3>title</h3>
@@ -290,10 +295,12 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-lg-6">
                           <div class="border border-drak border-4 shadow">
                               <div>
-                                  <img src="images/p001.png" class="w-100" alt="">
+                                <a href="#" class="" >
+                                  <img src="images/p001.png" width="200" height="185" style="object-fit:cover;"  class="w-100" alt="">
+                                </a>
                               </div>
                               <div class="px-3 py-4">
                                   <h3>title</h3>
@@ -304,10 +311,12 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-lg-6">
                           <div class="border border-drak border-4 shadow">
                               <div>
-                                  <img src="images/p001.png" class="w-100" alt="">
+                                <a href="#" class="" >
+                                  <img src="images/p001.png" width="200" height="185" style="object-fit:cover;"  class="w-100" alt="">
+                                </a>
                               </div>
                               <div class="px-3 py-4">
                                   <h3>title</h3>
@@ -317,6 +326,33 @@
                                   <a href="#" class="btn btn-danger">Link</a>
                               </div>
                           </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="border border-drak border-4 shadow">
+                              <div>
+                                  <img src="images/p001.png" class="" 
+                                  width="200" height="185"
+                                  style="width: 100%;
+                                  height: 100%;
+                                  object-fit: cover;
+                                  object-position: center;" alt="">
+                              </div>
+                              <div class="px-3 py-4">
+                                  <h3>title</h3>
+                                  <p>
+                                    123
+                                  </p>
+                                  <a href="#" class="btn btn-danger">Link</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card col-sm-6 border border-drak border-4 shadow" style="width: 11rem;">
+                        <a href="card-img-top">
+                          <img src="images/p001.png"  width="18rem" height="200rem" class="w-100" style="object-fit:cover;" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <div class="card-text"><a class="g-0 text-dark fw-bold text-decoration-none" href="">[得獎名單]「超級新手攻略&訣竅活動」得獎者名單</a></div>
+                        </div>
                       </div>
                   </div>
               </div>
@@ -328,6 +364,19 @@
         </div> -->
       </div>
     </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button  bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            推薦內容
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
     <section class="bg-dark py-5" id="Features">
       <div class="container">
           <div class="row g-4">
