@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic7</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+        <style>
+            .carousel-indicators [data-bs-target]{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-left: 8px;
+            margin-right: 8px;
+            margin-bottom: 0px;
+            }
+        body {
+            background: #ffffff;
+            background-image: 
+            repeating-linear-gradient(#000 0px ,#000 1px, transparent 1px, transparent 2px),
+            url('images/bg001.jfif');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        li {
+          list-style: none;
+        }
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <a class="navbar-brand px-5 fw-bold" href="index.html">
+              <img src="images/top001.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top ">第七史詩</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="Epic7.announcement.html">官方公告</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="Epic7.renew.html">更新資訊</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="Epic7.aboutus.html">關於我們</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="Epic7.connection.html">聯絡我們</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-light fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              登入
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">登入</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <section style="padding-block: 0px;">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-12">
+                        <form action="">
+                          <div class="mb-3 row">
+                            <label for="" class="col-form-label col-4">帳號</label>
+                            <div class="col-12">
+                              <input type="text" class="form-control" placeholder="請輸入帳號或E-mail">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="" class="col-form-label col-4">密碼</label>
+                                        <div class="col-12">
+                                          <input type="password" spellcheck="false" class="form-control" name="password" placeholder="密碼" autocomplete="current-password" required="" maxlength="22">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          記住帳號密碼
+                                        </label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          自動登入
+                                        </label>
+                                    </div>
+                                    <a class="m-0" href="Epic7.forgetpassword.html">忘記密碼</a>
+                                    <div class="mb-3">
+                                      <h4><span class="badge bg-secondary mt-3">沒有帳號?</span></h4>
+                                      <a href="Epic7.register.html">註冊帳號</a>
+                                    </div>
+                                  </form>
+                            </div>
+                          </div>
+                        </div>
+                  </section>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">登入</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="g-sm-3 my-3 col-2">
+                <a href="#"><img src="images/top002.png" class="d-block w-100" alt="..." href="Epic7.html"></a>
+              </div>
+              <div class="col-10 sm-my-5 g-sm-3 g-0">
+                <a class="g-0 fw-bold text-light fs-1 text-decoration-none" href="">第七史詩</a>
+                <div class="grid">
+                  <span class="fw-bold text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-Warning" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg></span>
+                  <span class="fw-bold text-light">OFFICIAL</span>
+                  <span class="fw-bold text-light">MOBILE</span>
+                  <span class="fw-bold text-light">回合制RPG</span>
+                  <span class="fw-bold text-light">世曼凱</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="container">
+            <div class="g-0 g-lg-3 row">
+              <div class="d-none d-md-block d-grid gap-2 col-3 bg-dark text-light">
+                <h6 class="p-4">帳戶資訊</h6>
+                <button type="button" class="btn btn-light fw-bold ms-4 w-75 w-md-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <img src="images/大頭01.png" class="w-100" alt=""></a><br>
+                </button>
+                <h6 class="p-2 p-lg-4">尚未登入。</h6>
+                <div class="d-grid gap-2 p-1 pb-0">
+                  <button type="button" class="btn btn-primary fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    登入
+                  </button>
+                </div>
+                <div>
+                  <a class="nav-link active fw-bold fs-4 px-3 mb-2" aria-current="page" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                  </svg> 主頁</a>
+                </div>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item bg-dark text-light">
+                    <h3 class="accordion-header" id="panelsStayOpen-headingOne">
+                      <button class="accordion-button bg-dark text-light fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne">
+                        官方消息
+                      </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                      <div class="accordion-body">
+                        <ul class="mt-1 mb-1">
+                          <li>
+                            <a class="nav-link active fw-bold mt-1 mb-1" href="Epic7.announcement.html"> 官方公告</a>
+                          </li>
+                          <li>
+                            <a class="nav-link active fw-bold mt-1 mb-1" href="Epic7.renew.html"> 更新資訊</a>
+                          </li>
+                          <li>
+                            <a class="nav-link active fw-bold mt-1 mb-1" href="#accordionExample"> 開發者的筆記</a>
+                          </li>
+                          <li>
+                            <a class="nav-link active fw-bold mt-1 mb-1" href="#"> 英雄故事</a>
+                          </li>
+                          <li>
+                            <a class="nav-link active fw-bold mt-1 mb-1" href="#"> 英雄圖鑑</a>
+                          </li>
+                          <li>
+                            <a class="nav-link active fw-bold mt-1 mb-1" href="Epic7.problem.html"> 常見問題</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-dark text-light">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                      <button class="accordion-button collapsed bg-dark text-light fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        活動
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                      <div class="accordion-body">
+                        <ul class="mt-1 mb-1">
+                          <li>
+                            <a class="nav-link active fw-bold mt-1 mb-1" href="#"> 活動</a>
+                          </li>
+                          <li>
+                            <a class="nav-link active fw-bold mt-1 mb-1" href="#"> 合作</a>
+                          </li>
+                          <li>
+                            <a class="nav-link active fw-bold mt-1 mb-1" href="#"> E7WC</a>
+                          </li>
+                          <li>
+                            <a class="nav-link active fw-bold mt-1 mb-1" href="#"> 2022原聲帶活動</a>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-light">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed bg-dark text-light fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  官方連結
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <li>
+                    <a class="nav-link active fw-bold mt-1 mb-1" href="#"> 官方網站</a>
+                  </li>
+                  <li>
+                    <a class="nav-link active fw-bold mt-1 mb-1" href="https://www.youtube.com/channel/UChm_apkrLewkgrdBuWXEW-Q"> YouTube</a>
+                  </li>
+                  <li>
+                    <a class="nav-link active fw-bold mt-1 mb-1" href="#accordionExample"> 開發者的筆記</a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-9 p-4 bg-light" id="announcement">
+          <div class="d-flex justify-content-star"><a class="g-0 mb-2 fs-3 text-dark fw-bold text-decoration-none" href="">常見問題</a></div>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">帳號相關</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">連線/登入相關</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">消費相關</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">遊戲相關</button>
+            </li>
+          </ul>
+          
+          <div class="tab-content">
+            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">帳號相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩帳號無法登入怎麼辦?</a>
+                  </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">帳號相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩忘記密碼怎麼辦?</a>
+                  </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">帳號相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩帳號無法登入怎麼辦?</a>
+                  </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">帳號相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩忘記密碼怎麼辦?</a>
+                  </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">帳號相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩帳號無法登入怎麼辦?</a>
+                  </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">帳號相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩忘記密碼怎麼辦?</a>
+                  </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">帳號相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩帳號無法登入怎麼辦?</a>
+                  </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">帳號相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩忘記密碼怎麼辦?</a>
+                  </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">帳號相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩帳號無法登入怎麼辦?</a>
+                  </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">帳號相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩忘記密碼怎麼辦?</a>
+                  </div>
+                </div>
+                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="alert alert-dark m-1" role="alert">
+                        <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">連線相關</a>
+                        <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法連線?</a>
+                    </div>
+                    <div class="alert alert-dark m-1" role="alert">
+                        <a href="" class="g-0 text-light fw-bold bg-danger text-decoration-none">登入相關</a>
+                        <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法登入?</a>
+                    </div>
+                    <div class="alert alert-dark m-1" role="alert">
+                        <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">連線相關</a>
+                        <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法連線?</a>
+                    </div>
+                    <div class="alert alert-dark m-1" role="alert">
+                        <a href="" class="g-0 text-light fw-bold bg-danger text-decoration-none">登入相關</a>
+                        <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法登入?</a>
+                    </div>
+                    <div class="alert alert-dark m-1" role="alert">
+                        <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">連線相關</a>
+                        <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法連線?</a>
+                    </div>
+                    <div class="alert alert-dark m-1" role="alert">
+                        <a href="" class="g-0 text-light fw-bold bg-danger text-decoration-none">登入相關</a>
+                        <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法登入?</a>
+                    </div>
+                    <div class="alert alert-dark m-1" role="alert">
+                        <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">連線相關</a>
+                        <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法連線?</a>
+                    </div>
+                    <div class="alert alert-dark m-1" role="alert">
+                        <a href="" class="g-0 text-light fw-bold bg-danger text-decoration-none">登入相關</a>
+                        <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法登入?</a>
+                    </div>
+                    <div class="alert alert-dark m-1" role="alert">
+                        <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">連線相關</a>
+                        <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法連線?</a>
+                    </div>
+                    <div class="alert alert-dark m-1" role="alert">
+                        <a href="" class="g-0 text-light fw-bold bg-danger text-decoration-none">登入相關</a>
+                        <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法登入?</a>
+                    </div>
+            </div>
+            <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">消費相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法付費?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">消費相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩付款後沒有商品?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">消費相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法付費?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">消費相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩付款後沒有商品?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">消費相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法付費?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">消費相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩付款後沒有商品?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">消費相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法付費?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">消費相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩付款後沒有商品?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">消費相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法付費?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">消費相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩付款後沒有商品?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">消費相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩無法付費?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">消費相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩付款後沒有商品?</a>
+                </div>
+            </div>
+            <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩故事如何?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">角色如何獲得?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">遊戲內金幣如何獲得?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩故事如何?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">角色如何獲得?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">遊戲內金幣如何獲得?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩故事如何?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">角色如何獲得?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">遊戲內金幣如何獲得?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩故事如何?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">角色如何獲得?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">遊戲內金幣如何獲得?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">第七史詩故事如何?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">角色如何獲得?</a>
+                </div>
+                <div class="alert alert-dark m-1" role="alert">
+                    <a href="" class="g-0 text-light fw-bold bg-primary text-decoration-none">遊戲相關</a>
+                    <a href="" class="g-0 text-dark fw-bold text-decoration-none">遊戲內金幣如何獲得?</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <footer class="text-light text-center py-5" style="background-color:#1d1d1d;">
+    COPYRIGHTS &copy; 2022 Design By 楊詠順
+  </footer>
+    <script>
+        var firstTabEl = document.querySelector('#myTab li:last-child button')
+        var firstTab = new bootstrap.Tab(firstTabEl)
+        firstTab.show()
+      var myCarousel = document.querySelector('#myCarousel')
+      var carousel = new bootstrap.Carousel(myCarousel)
+      AOS.init();
+      lightbox.option({
+      albumLabel: '%1/%2',
+      fadeDuration: 500,
+      imageFadeDuration: 500,
+      resizeDuration: 500,
+      })
+    </script>
+  </body>
+</html>
